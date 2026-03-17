@@ -1,0 +1,116 @@
+# ─── Terraform ────────────────────────────────────────────────────────────────
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfplan
+*.tfvars
+!example.tfvars
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ─── Ansible ──────────────────────────────────────────────────────────────────
+*.retry
+inventory/
+!inventory/example_hosts
+roles/galaxy/
+.vault_pass
+vault_pass.txt
+ansible-vault-password
+*.vault
+group_vars/all/vault.yml
+host_vars/*/vault.yml
+
+# ─── SSH & Keys ───────────────────────────────────────────────────────────────
+*.pem
+*.key
+*.ppk
+*.pub
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*-key.pem
+*_key.pem
+.ssh/
+
+# ─── Secrets & Credentials ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+credentials
+credentials.json
+*credentials*
+aws_credentials
+.aws/
+*.tfvars
+!*.tfvars.example
+*token*
+*password*
+*passwd*
+*secret*
+
+# ─── Shell Scripts ────────────────────────────────────────────────────────────
+*.sh.log
+*.sh.bak
+/tmp/
+/var/tmp/
+*.tmp
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+*.log.*
+logs/
+/log/
+
+# ─── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─── VS Code ──────────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# ─── Python (Ansible deps) ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ─── Node (if any tooling) ────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ─── Backup & Temp Files ──────────────────────────────────────────────────────
+*.bak
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+.idea/
