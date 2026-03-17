@@ -2,7 +2,8 @@ variable "project" {
   type = string
 }
 variable "environment" {
-  type = string
+  description = "Environment"
+  type        = string
 }
 
 variable "owner" {
