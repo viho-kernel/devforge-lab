@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "this" {
-  bucket = "${var.project}-${var.environment}-${var.purpose}-backend-bucket"
+  bucket = "${var.project}-${var.environment}-${var.purpose}-bucket"
 
   tags = merge(
     local.common_tags,
